@@ -1,4 +1,6 @@
-![docker pull](https://img.shields.io/docker/pulls/valentinrudloff/gottowork.svg)
+![docker pull](https://img.shields.io/docker/pulls/valentinrudloff/gottowork)
+![licence](https://img.shields.io/github/license/Gamma-Software/gottowork)
+![commit activity](https://img.shields.io/github/last-commit/Gamma-Software/gottowork)
 
 # GotToWork
 Deploy and Run quickly a GoToWork (with Telegram) to monitor the connection with a IoT device
