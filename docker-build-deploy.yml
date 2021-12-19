@@ -19,7 +19,7 @@ jobs:
     
     - name: Build Docker image
       run: |
-        docker build . --tag valentinrudloff/pingbot:${{ env.RELEASE_VERSION }}
+        docker build . --tag valentinrudloff/gottowork:${{ env.RELEASE_VERSION }}
 
     - name: Docker Login
       env :
@@ -30,4 +30,4 @@ jobs:
 
     - name: Docker Push
       run: |
-        docker push valentinrudloff/pingbot:${{ env.RELEASE_VERSION }}
+        docker push valentinrudloff/gottowork:${{ env.RELEASE_VERSION }}
