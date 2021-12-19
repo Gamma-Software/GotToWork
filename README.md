@@ -11,8 +11,11 @@ Telegram account with a Bot
 Follow the Telegram bot creation page to create your own [bot](https://core.telegram.org/bots)
 
 ## Configuration
-You need to create three environment variables.  You 
+You need to create three environment variables.  You can see the .env file example in the repository.
 
-This can be done as such
-
-docker run -d --env-file {path-to-env-file} valentinrudloff/gottowork:v1.0.0
+## Execute
+You can execute the oneshot application:\
+`docker run -d --env-file {abs-or-rel-path-to-env-file} valentinrudloff/gottowork:v1.0.0`\
+Or you can execute the application periodically (everyday at 19pm for instance) with cron:\
+`{ crontab -l -u $USER; echo '0 19 * * * docker run -d --env-file {abs-path-to-env-file} valentinrudloff/gottowork:v1.0.0'; } | crontab -u $USER -`\
+Be careful, the environment variables must be in absolute path.
